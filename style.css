@@ -74,10 +74,16 @@ body {
     color: var(--color-hover); 
 }
 
+.hero a {
+    color: var(--color-font-sec);
+    text-decoration: none; 
+    font-weight: bold;
+    transition: color 0.5s; 
+}
 
 
-a {
-    text-decoration: none;
+.hero a:hover{
+    color: var(--color-font);
 }
 
 .hero {
@@ -171,7 +177,22 @@ a {
 
 .page-footer a {
     color: var(--color-font);
+    text-decoration: none;
     margin: 0 15px;
     font-size: var(--text-small);
     transition: color 0.3s;
+    gap: 15px;  
+}
+
+.main-header h1 {
+    display: flex;
+    align-items: center;
+         
+    font-size: var(--text-title);
+    margin: 0;
+}
+
+.main-header .logo {
+    height: 75px;       
+    width: auto;        
 }
