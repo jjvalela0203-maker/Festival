@@ -22,7 +22,7 @@
 
 body {
     font-family: 'Espoir', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--color-background);
+    background-image: url(resources/img/festival.jpg);
 }
 
 /* Inicio */
@@ -219,10 +219,16 @@ body {
     border-top: 1px solid var(--color-hover); 
 }
 
-.history h1 {
+.history h1, .history h4 {
     flex: 0 0 100%;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.history h4 {
+    font-size: var(--text-large);
+    font-weight: normal;
+    margin:0;
 }
 
 .history-text{
@@ -256,14 +262,15 @@ figcaption {
     display: block; 
 }
 
-.list {
+.list, .patreon {
     flex: 1;
     max-width: 37.5rem;
 }
 
-.list ul li {
-    font-size: var(--text-medium);
+.list ul li , .patreon li{
+    font-size: var(--text-large);
 }
+
 
 .values-image-container{
     width: 25rem;
@@ -271,4 +278,30 @@ figcaption {
     overflow: hidden;
     border: 2px solid var(--color-hover);
     flex-shrink: 0;
+}
+
+.patreon-logo{
+    width: 12.5rem;
+    height: auto;
+    margin-right: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.lurpak-logo, .kikkoman-logo, .veuve-logo{
+    width: 12.5rem;
+    height: auto;
+    margin-right: 1rem;
+    background-color: white;
+    background-size: cover;
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+.patreon li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
