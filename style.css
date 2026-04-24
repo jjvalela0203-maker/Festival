@@ -218,18 +218,6 @@ body {
     max-width: 1920px;
     border-top: 1px solid var(--color-hover); 
 }
-.history-inv{
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: var(--color-main);
-    color: var(--color-font);
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-    padding: 2.5rem 1.25rem;
-    max-width: 1920px;
-    border-top: 1px solid var(--color-hover); 
-}
 
 .history h1 {
     flex: 0 0 100%;
@@ -269,10 +257,18 @@ figcaption {
 }
 
 .list {
-    max-width: 50%;
-    ;
+    flex: 1;
+    max-width: 37.5rem;
 }
 
 .list ul li {
     font-size: var(--text-medium);
+}
+
+.values-image-container{
+    width: 25rem;
+    height: 25rem; 
+    overflow: hidden;
+    border: 2px solid var(--color-hover);
+    flex-shrink: 0;
 }
