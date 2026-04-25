@@ -22,7 +22,6 @@
 
 body {
     font-family: 'Espoir', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(resources/img/festival.jpg);
 }
 
 /* Inicio */
@@ -97,6 +96,7 @@ body {
     text-align: center;
     color: var(--color-font);
     overflow: hidden;
+    transition: transform 0.2s;
 }
 
 .hero img {
@@ -123,10 +123,10 @@ body {
     padding: 12px 24px;
     border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.2s;
+
 }
 
-.hero button:hover {
+.hero.escala:hover {
     transform: scale(1.05);
 }
 
