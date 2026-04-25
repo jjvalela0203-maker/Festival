@@ -9,6 +9,7 @@
 :root {
     --color-main: #000309;
     --color-hover: #FFD700;
+    --color-dark: #b29907;
     --color-background: #525151;
     --color-font: white;
     --color-font-sec: black;
@@ -128,6 +129,7 @@ body {
 
 .hero.escala:hover {
     transform: scale(1.05);
+    z-index: 1;
 }
 
 .mindesc{
@@ -314,13 +316,31 @@ figcaption {
     border-collapse: separate;
     border-spacing: 0;
     margin-top: 20px;
-    border: 1px solid var(--color-hover);
+    border: 1px solid var(--color-dark);
     empty-cells: hide;
 }
 
 .tabla-horarios th, .tabla-horarios td {
-    border: 1px solid var(--color-hover);
+    border: 1px solid var(--color-dark);
     padding: 10px;
     text-align: center;
     vertical-align: middle;
 }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    /* Menú en columna: en pantallas pequeñas no hay
+       espacio horizontal para poner los links en fila */
+    .page-footer, .main-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
