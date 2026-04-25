@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: 'Espoir', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Bodoni Moda', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Inicio */
@@ -218,7 +218,9 @@ body {
     max-width: 1920px;
     border-top: 1px solid var(--color-hover); 
 }
-
+.schedules {
+    flex-direction: column;
+}
 .history h1, .history h4 {
     flex: 0 0 100%;
     text-align: center;
@@ -304,4 +306,21 @@ figcaption {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+/* Horarios */
+.tabla-horarios{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    border: 1px solid var(--color-hover);
+    empty-cells: hide;
+}
+
+.tabla-horarios th, .tabla-horarios td {
+    border: 1px solid var(--color-hover);
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
 }
